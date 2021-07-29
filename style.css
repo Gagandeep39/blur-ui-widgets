@@ -57,6 +57,7 @@ p {
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 8px;
+  z-index: 1;
 }
 
 .fullscreen-icon {
