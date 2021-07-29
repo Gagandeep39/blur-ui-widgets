@@ -13,8 +13,8 @@ body {
 
 .background {
   position: absolute;
-  background-image: url(./background.svg);
-  background-size: cover;
+  background-image: url(./assets/background2.svg);
+  background-size: contain;
   height: 100%;
   width: 100%;
   top: 0;
@@ -74,5 +74,5 @@ p {
   order: 9;
   flex-grow: 0;
   margin: 0px 16px;
-  background-image: url(./fullscreen.svg);
+  background-image: url(./assets/fullscreen.svg);
 }
