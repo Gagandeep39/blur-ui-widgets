@@ -262,14 +262,16 @@ hr {
 .row-closed {
   /* Table */
 
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 1312px;
   height: 56px;
 
   /* Layers/Lvl 2 (8%) */
 
   background: rgba(255, 255, 255, 0.08);
   border-radius: 4px;
+
+  margin-top: 4px;
 }
 
 .row-closed > .checkbox {
@@ -421,5 +423,23 @@ hr {
 
   /* Emphasis/High (100%) */
 
-  fill: #ffffff;
+  /* Workaround when fill not wrking becase of img tag */
+  /* fill: #fff; */
+  filter: invert(1);
+}
+
+.row-closed > .graph {
+  position: absolute;
+  width: 313px;
+  left: 863px;
+}
+
+/* CUSTOM CSS */
+.graph > img {
+  position: absolute;
+  top: 28px;
+  transform: translateY(-50%);
+}
+
+.row-closed:nth-child(2) {
 }
