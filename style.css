@@ -40,7 +40,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 24px 0px 16px;
+  padding: 0px 24px 0px 24px;
 
   position: fixed;
   width: 784px;
@@ -239,4 +239,187 @@ p {
   flex-grow: 0;
   margin: 0px 16px;
   margin-right: 0;
+}
+
+.container {
+  position: absolute;
+  left: 64px;
+  right: 64px;
+  top: 140px;
+  height: 200px;
+  /* background: red;
+  opacity: 0.2; */
+}
+
+hr {
+  /* Emphasis/Low (40%) */
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  /* T be removed */
+  margin-bottom: 16px;
+}
+
+.row-closed {
+  /* Table */
+
+  position: absolute;
+  width: 100%;
+  height: 56px;
+
+  /* Layers/Lvl 2 (8%) */
+
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+.row-closed > .checkbox {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 20px;
+  top: 16px;
+}
+
+.row-closed > .date {
+  /* Field 1 */
+
+  position: absolute;
+  width: 78px;
+  height: 18px;
+  left: 56px;
+  top: 19px;
+
+  /* Body/02/Regular */
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-end;
+
+  /* Emphasis/High (100%) */
+
+  color: #ffffff;
+}
+
+.row-closed > .site-data {
+  /* Field 3 */
+
+  position: absolute;
+  width: 191px;
+  height: 18px;
+  left: 176px;
+  top: 19px;
+
+  /* Body/02/Regular */
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-end;
+
+  /* Emphasis/High (100%) */
+
+  color: #ffffff;
+}
+
+.row-closed > .actual {
+  /* Field 6 */
+
+  position: absolute;
+  width: 86px;
+  height: 21px;
+  left: 442px;
+  top: 18px;
+
+  /* Sub title/02/Medium */
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: 0.25px;
+
+  /* Emphasis/High (100%) */
+
+  color: #ffffff;
+}
+
+.row-closed > .modeled {
+  /* Title */
+
+  position: absolute;
+  width: 82px;
+  height: 21px;
+  left: 590px;
+  top: 18px;
+
+  /* Sub title/02/Regular */
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: right;
+  letter-spacing: 0.1px;
+
+  /* Emphasis/High (100%) */
+
+  color: #ffffff;
+}
+
+.row-closed > .delta {
+  /* Title */
+
+  position: absolute;
+  width: 69px;
+  height: 21px;
+  left: 715px;
+  top: 18px;
+
+  /* Sub title/02/Regular */
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: right;
+  letter-spacing: 0.1px;
+
+  /* Emphasis/High (100%) */
+
+  color: #ffffff;
+}
+
+.row-closed > .arrow-up {
+  /* Vector (Stroke) */
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  /* left: 12.5%;
+  right: 12.5%;
+  top: 25%;
+  bottom: 31.25%; */
+
+  /* Emphasis/High (100%) */
+
+  fill: #ffffff;
 }
