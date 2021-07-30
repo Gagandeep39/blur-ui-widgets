@@ -1,0 +1,122 @@
+.container {
+  position: absolute;
+  left: 64px;
+  right: 64px;
+  top: 140px;
+  height: 200px;
+  /* background: red;
+  opacity: 0.2; */
+}
+/* Add Rounded Corder */
+tbody tr td:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+tbody tr td:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+/* Add Hover ffect */
+tbody tr:hover td {
+  border-top: 1px solid #47d060;
+  border-bottom: 1px solid #47d060;
+}
+
+tbody tr:hover > td:first-child {
+  border-left: 1px solid #47d060;
+}
+
+tbody tr:hover > td:last-child {
+  border-right: 1px solid #47d060;
+}
+
+/* Column Hovers */
+
+th::before {
+  transition: transform 0.2s;
+  border-radius: 8px;
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transform: scaleX(0);
+  left: 0;
+}
+th:hover::before {
+  /* width: 100%; */
+  transform: scaleX(1);
+  border-top: 4px solid #47d060;
+}
+
+table {
+  position: relative;
+  width: 100%;
+  height: 56px;
+
+  /* Body/02/Regular */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* Emphasis/High (100%) */
+
+  color: #ffffff;
+
+  border-spacing: 0 4px;
+}
+
+thead tr th {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  height: 56px;
+}
+
+/* Headers */
+th.checkbox {
+  width: 4%;
+  /* background-color: red; */
+}
+
+/* Image mst be converted to block to be aligned */
+th.checkbox > img {
+  display: block;
+  margin: 0 auto;
+}
+
+th.month {
+  width: 8%;
+  position: relative;
+}
+
+th.month > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+th.month > div > img {
+  margin-left: 8px;
+}
+
+th.sites {
+  width: 20%;
+}
+
+th.actual {
+  width: 11%;
+}
+
+th.modeled {
+  width: 11%;
+}
+th.delta {
+  width: 8%;
+}
+
+th.graph {
+  width: 34%;
+}
+
+th.expand {
+  width: 4%;
+}
