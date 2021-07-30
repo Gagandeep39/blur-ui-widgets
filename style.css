@@ -273,6 +273,14 @@ hr {
   border-radius: 4px;
 
   margin-top: 4px;
+
+  border: 1px solid transparent;
+}
+
+.row-closed:hover {
+  border: 1px solid #47d060;
+
+  transition: border 0.3s ease;
 }
 
 .row-closed > .checkbox {
@@ -442,5 +450,144 @@ hr {
   transform: translateY(-50%);
 }
 
-.row-closed:nth-child(2) {
+table {
+  position: relative;
+  width: 1312px;
+  height: 56px;
+
+  /* Body/02/Regular */
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* Emphasis/High (100%) */
+
+  color: #ffffff;
+
+  border-collapse: collapse;
+}
+
+.table > .checkbox {
+  left: 20px;
+  position: absolute;
+  top: 16px;
+}
+
+.table > .month-col {
+  position: absolute;
+  /* background-color: gold; */
+  top: 18px;
+  left: 56px;
+  display: flex;
+  width: 100px;
+  align-items: center;
+}
+
+.month-col::before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  top: -20px;
+  /* Primary/Green */
+
+  border-top: 4px solid #47d060;
+  left: -12px;
+  border-radius: 8px;
+}
+
+.month-col > span {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.25px;
+
+  /* Primary/Green */
+
+  color: #47d060;
+}
+.month-col > img {
+  margin-left: 8px;
+}
+
+.site-col {
+  width: 300px;
+}
+
+thead {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.4);
+}
+
+th.checkbox {
+  width: 4%;
+  /* background-color: red; */
+}
+th {
+  position: relative;
+}
+
+/* Image mst be converted to block to be aligned */
+th.checkbox > img {
+  display: block;
+  margin: 0 auto;
+}
+
+th.month {
+  width: 8%;
+  position: relative;
+}
+
+th::before {
+  transition: transform 0.2s;
+  border-radius: 8px;
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transform: scaleX(0);
+  left: 0;
+}
+th:hover::before {
+  /* width: 100%; */
+  transform: scaleX(1);
+  border-top: 4px solid #47d060;
+}
+
+th.month > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+th.month > div > img {
+  margin-left: 8px;
+}
+
+th.sites {
+  width: 20%;
+}
+
+th.actual {
+  width: 11%;
+}
+
+th.modeled {
+  width: 11%;
+}
+th.delta {
+  width: 8%;
+}
+
+th.graph {
+  width: 34%;
+}
+
+th.expand {
+  width: 4%;
 }
