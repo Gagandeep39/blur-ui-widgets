@@ -217,58 +217,6 @@ table {
   border-collapse: collapse;
 }
 
-.table > .checkbox {
-  left: 20px;
-  position: absolute;
-  top: 16px;
-}
-
-.table > .month-col {
-  position: absolute;
-  /* background-color: gold; */
-  top: 18px;
-  left: 56px;
-  display: flex;
-  width: 100px;
-  align-items: center;
-}
-
-.month-col::before {
-  position: absolute;
-  content: '';
-  width: 100px;
-  top: -20px;
-  /* Primary/Green */
-
-  border-top: 4px solid #47d060;
-  left: -12px;
-  border-radius: 8px;
-}
-
-.month-col > span {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: 0.25px;
-
-  /* Primary/Green */
-
-  color: #47d060;
-}
-.month-col > img {
-  margin-left: 8px;
-}
-
-.site-col {
-  width: 300px;
-}
-
 thead {
   border-top: 0.5px solid rgba(255, 255, 255, 0.4);
 }
