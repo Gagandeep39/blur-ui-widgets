@@ -73,18 +73,18 @@ thead tr th {
 }
 
 /* Headers */
-th.checkbox {
+tr > .checkbox {
   width: 4%;
   /* background-color: red; */
 }
 
 /* Image mst be converted to block to be aligned */
-th.checkbox > img {
+tr > .checkbox > img {
   display: block;
   margin: 0 auto;
 }
 
-th.month {
+tr > .month {
   width: 8%;
   position: relative;
 }
@@ -93,6 +93,8 @@ th.month > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #47d060;
+  font-weight: bold;
 }
 th.month > div > img {
   margin-left: 8px;
@@ -102,7 +104,7 @@ th.sites {
   width: 20%;
 }
 
-th.actual {
+tr > .actual {
   width: 11%;
 }
 
@@ -119,4 +121,44 @@ th.graph {
 
 th.expand {
   width: 4%;
+}
+
+/* Rows */
+.row-closed {
+  /* Table */
+
+  position: relative;
+  width: 100%;
+  height: 56px;
+
+  /* Layers/Lvl 2 (8%) */
+
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+
+  margin-top: 4px;
+  text-align: center;
+}
+
+.graph {
+  position: relative;
+}
+
+/* CUSTOM CSS */
+.graph > img {
+  position: absolute;
+  left: 40px;
+  top: 28px;
+  transform: translateY(-50%);
+}
+
+.row-closed > td > .arrow-up {
+  /* Vector (Stroke) */
+
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  /* Workaround when fill not wrking becase of img tag */
+  /* fill: #fff; */
+  filter: invert(1);
 }
