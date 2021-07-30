@@ -48,6 +48,11 @@ th:hover::before {
   border-top: 4px solid #47d060;
 }
 
+tbody tr td {
+  border: 1px solid transparent;
+  transition: border 0.2s ease;
+}
+
 table {
   position: relative;
   width: 100%;
@@ -108,6 +113,16 @@ tr > .actual {
   width: 11%;
 }
 
+th.actual > div,
+th.modeled > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+th.actual > div > img,
+th.modeled > div > img {
+  margin-right: 8px;
+}
 th.modeled {
   width: 11%;
 }
