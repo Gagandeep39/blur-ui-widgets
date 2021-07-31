@@ -78,30 +78,30 @@ thead tr th {
 }
 
 /* Headers */
-tr > .checkbox {
+.tr > .checkbox {
   width: 4%;
-  /* background-color: red; */
+  background-color: red;
 }
 
 /* Image mst be converted to block to be aligned */
-tr > .checkbox > img {
+.tr > .checkbox > img {
   display: block;
   margin: 0 auto;
 }
 
-tr > .month {
+.tr > .month {
   width: 8%;
   position: relative;
 }
 
-tr > .month > div {
+.tr > .month > div {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #47d060;
   font-weight: bold;
 }
-tr > .month > div > img {
+.tr > .month > div > img {
   margin-left: 8px;
 }
 
