@@ -8,25 +8,25 @@
   opacity: 0.2; */
 }
 /* Add Rounded Corder */
-tbody tr td:first-child {
+.row-closed td:first-child {
   border-radius: 4px 0 0 4px;
 }
 
-tbody tr td:last-child {
+.row-closed td:last-child {
   border-radius: 0 4px 4px 0;
 }
 
 /* Add Hover ffect */
-tbody tr:hover td {
+.row-closed:hover td {
   border-top: 1px solid #47d060;
   border-bottom: 1px solid #47d060;
 }
 
-tbody tr:hover > td:first-child {
+.row-closed:hover > td:first-child {
   border-left: 1px solid #47d060;
 }
 
-tbody tr:hover > td:last-child {
+.row-closed:hover > td:last-child {
   border-right: 1px solid #47d060;
 }
 
@@ -68,7 +68,7 @@ table {
 
   color: #ffffff;
 
-  border-spacing: 0 4px;
+  border-spacing: 0;
 }
 
 thead tr th {
