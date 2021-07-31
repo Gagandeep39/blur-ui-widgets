@@ -94,18 +94,18 @@ tr > .month {
   position: relative;
 }
 
-th.month > div {
+tr > .month > div {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #47d060;
   font-weight: bold;
 }
-th.month > div > img {
+tr > .month > div > img {
   margin-left: 8px;
 }
 
-th.sites {
+tr > .sites {
   width: 20%;
 }
 
@@ -113,28 +113,28 @@ tr > .actual {
   width: 11%;
 }
 
-th.actual > div,
-th.modeled > div {
+tr > .actual > div,
+tr > .modeled > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-th.actual > div > img,
-th.modeled > div > img {
+tr > .actual > div > img,
+tr > .modeled > div > img {
   margin-right: 8px;
 }
-th.modeled {
+tr > .modeled {
   width: 11%;
 }
-th.delta {
+tr > .delta {
   width: 8%;
 }
 
-th.graph {
+tr > .graph {
   width: 34%;
 }
 
-th.expand {
+tr > .expand {
   width: 4%;
 }
 
