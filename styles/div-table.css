@@ -38,10 +38,28 @@
 
 .th {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   transition: font-weight 0.1s ease-out;
   cursor: pointer;
+}
+
+.th::before {
+  transition: transform 0.2s;
+  border-radius: 8px;
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transform: scaleX(0);
+  left: 0;
+}
+
+.th:hover::before {
+  /* width: 100%; */
+  transform: scaleX(1);
+  border-top: 4px solid #47d060;
 }
 
 .tr > .checkbox {
