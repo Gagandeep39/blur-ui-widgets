@@ -1,0 +1,46 @@
+.expanded {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  height: 258px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.expanded .td {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.expanded:hover {
+  border-color: #47d060;
+}
+
+.expanded > .parent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 56px;
+}
+
+.expanded .child {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.expanded .td.expand,
+.expanded .td.graph {
+  justify-content: center;
+}
+
+.expanded > .sites.child {
+  /* Emphasis/Medium (80%) */
+
+  color: rgba(255, 255, 255, 0.8);
+}

@@ -96,7 +96,7 @@ thead tr th {
 
 .tr > .month > div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   color: #47d060;
   font-weight: bold;
@@ -116,7 +116,7 @@ tr > .actual {
 tr > .actual > div,
 tr > .modeled > div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 tr > .actual > div > img,

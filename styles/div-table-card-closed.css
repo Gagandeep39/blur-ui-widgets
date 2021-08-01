@@ -20,10 +20,14 @@
 
 .closed .td {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
+.closed .td.expand,
+.closed .td.graph {
+  justify-content: center;
+}
 .arrow-down {
   /* fill: white; */
   filter: invert(1);
