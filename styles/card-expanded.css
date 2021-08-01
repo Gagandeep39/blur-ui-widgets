@@ -41,13 +41,14 @@
   font-size: 14px;
   height: 202px;
   padding: 16px 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.expanded .child .tr {
+.expanded > .child > .tr {
   height: auto;
 }
 
-.expanded .child .tr .td {
+.expanded > .child > .tr > .td {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -58,10 +59,10 @@
   justify-content: center;
 }
 .expanded > .parent > .td.sites,
-.expanded .child .tr .td.sites {
+.expanded > .child > .tr > .td.sites {
   padding-left: 36px;
   justify-content: flex-start;
-  color: rgba(255, 255, 255, 0.8);
+  position: relative;
 }
 
 .expanded > .parent::after {
@@ -73,4 +74,9 @@
   width: 95%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.child > .tr > .graph > img {
+  position: absolute;
+  /* left: 0; */
 }

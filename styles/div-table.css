@@ -86,15 +86,15 @@
 }
 
 .tr > .sites {
-  width: 20%;
+  width: 26%;
 }
 
 .tr > .actual {
-  width: 11%;
+  width: 8%;
 }
 
 .tr > .modeled {
-  width: 11%;
+  width: 8%;
 }
 
 .tr > .actual > img,
