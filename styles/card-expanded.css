@@ -4,9 +4,10 @@
   height: 258px;
   transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
+  position: relative;
 }
 
-.expanded .td {
+.expanded .parent .td {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -19,10 +20,13 @@
 }
 
 .expanded > .parent {
+  height: 56px;
+}
+
+.expanded > .parent > .td {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 56px;
 }
 
 .expanded .child {
@@ -34,13 +38,34 @@
   align-items: center;
 }
 
+.expanded .child .tr {
+  height: 202px;
+  padding: 16px 0;
+}
+
 .expanded .td.expand,
 .expanded .td.graph {
   justify-content: center;
 }
 
-.expanded > .sites.child {
+.expanded .td.sites {
+  padding-left: 36px;
+  justify-content: flex-start;
+}
+
+.expanded > .tr > .sites.child {
   /* Emphasis/Medium (80%) */
 
   color: rgba(255, 255, 255, 0.8);
+}
+
+.expanded > .parent::after {
+  content: '';
+  background: rgba(255, 255, 255, 0.4);
+  height: 0.5px;
+  position: absolute;
+  top: 56px;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -28,6 +28,12 @@
 .closed .td.graph {
   justify-content: center;
 }
+
+.closed .td.sites {
+  justify-content: flex-start;
+  padding-left: 36px;
+}
+
 .arrow-down {
   /* fill: white; */
   filter: invert(1);
