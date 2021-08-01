@@ -1,0 +1,30 @@
+.closed {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  height: 56px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.closed > .tr > .td {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.closed:hover {
+  border-color: #47d060;
+}
+
+.closed > .tr > .td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-down {
+  /* fill: white; */
+  filter: invert(1);
+}
