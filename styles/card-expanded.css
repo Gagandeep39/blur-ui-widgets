@@ -1,10 +1,15 @@
 .expanded {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 4px;
-  height: 258px;
+  height: 56px;
   transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
   position: relative;
+  overflow: hidden;
+}
+
+.expanded:active {
+  height: 258px;
 }
 
 .expanded > .parent > .td {
