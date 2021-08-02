@@ -1,0 +1,34 @@
+// To be deleted
+.closed {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  height: 56px;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+  .td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &:hover {
+    border-color: #47d060;
+  }
+  .td.expand {
+    justify-content: center;
+  }
+  .td.graph {
+    justify-content: center;
+  }
+  .td.sites {
+    justify-content: flex-start;
+    padding-left: 36px;
+  }
+}
+.arrow-down {
+  filter: invert(1);
+}
