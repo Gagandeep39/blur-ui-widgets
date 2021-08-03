@@ -1,0 +1,83 @@
+table {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+thead tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  height: 56px;
+}
+tr {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+  > .checkbox {
+    width: 4%;
+  }
+  > .month {
+    width: 8%;
+    position: relative;
+    color: #47d060;
+    font-weight: bold;
+    > img {
+      margin-left: 8px;
+    }
+  }
+  > .sites {
+    width: 26%;
+  }
+  > .actual {
+    width: 8%;
+    > img {
+      margin-right: 8px;
+    }
+  }
+  > .modeled {
+    width: 8%;
+    > img {
+      margin-right: 8px;
+    }
+  }
+  > .delta {
+    width: 8%;
+  }
+  > .graph {
+    width: 34%;
+  }
+  > .expand {
+    width: 4%;
+  }
+}
+th {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  transition: font-weight 0.1s ease-out;
+  cursor: pointer;
+  &::before {
+    transition: transform 0.2s;
+    border-radius: 8px;
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transform: scaleX(0);
+    left: 0;
+  }
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+      border-top: 4px solid #47d060;
+    }
+  }
+}

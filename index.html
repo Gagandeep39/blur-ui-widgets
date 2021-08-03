@@ -39,177 +39,29 @@
     </nav>
 
     <div class="container">
-      <div class="table">
-        <div class="thead">
-          <div class="tr">
-            <div class="th checkbox">
+      <table>
+        <thead>
+          <tr>
+            <th class="checkbox">
               <img src="./assets/checkbox-empty.svg" class="" />
-            </div>
-            <div class="th month">
+            </th>
+            <th class="month">
               <span>Month</span>
               <img src="./assets/sort.svg" alt="" />
-            </div>
-            <div class="th sites"></div>
-            <div class="th actual">
+            </th>
+            <th class="sites">Sites</th>
+            <th class="actual">
               <img src="./assets/actual.svg" alt="" /> <span>Actual</span>
-            </div>
-            <div class="th modeled">
+            </th>
+            <th class="modeled">
               <img src="./assets/modeled.svg" alt="" /> <span>Modeled</span>
-            </div>
-            <div class="th delta">Delta</div>
-            <div class="th graph"></div>
-            <div class="th expand"></div>
-          </div>
-        </div>
-
-        <div class="tbody">
-          <div class="tr closed">
-            <div class="td checkbox">
-              <img src="./assets/checkbox-empty.svg" alt="" />
-            </div>
-            <div class="td month">March 2022</div>
-            <div class="td sites">Project Operating Cash flow</div>
-            <div class="td actual">$1,655,667</div>
-            <div class="td modeled">$1,655,667</div>
-            <div class="td delta">+ $8,892</div>
-            <div class="td graph">
-              <!-- <img src="./assets/divider.svg" alt="" /> -->
-              <div>
-                <canvas id="myChart"></canvas>
-              </div>
-              <!-- <img src="./assets/graph-rectangle.svg" alt="" /> -->
-            </div>
-            <div class="td expand">
-              <img src="./assets/arrow-down.svg" class="arrow-down" alt="" />
-            </div>
-          </div>
-
-          <div class="tr closed">
-            <div class="td checkbox">
-              <img src="./assets/checkbox-empty.svg" alt="" />
-            </div>
-            <div class="td month">March 2022</div>
-            <div class="td sites">Project Operating Cash flow</div>
-            <div class="td actual">$1,655,667</div>
-            <div class="td modeled">$1,655,667</div>
-            <div class="td delta">+ $8,892</div>
-            <div class="td graph">
-              <img src="./assets/divider.svg" alt="" />
-              <img src="./assets/graph-rectangle.svg" alt="" />
-            </div>
-            <div class="td expand">
-              <img src="./assets/arrow-down.svg" class="arrow-down" alt="" />
-            </div>
-          </div>
-
-          <div class="tr expanded">
-            <div class="tr parent">
-              <div class="td checkbox">
-                <img src="./assets/checkbox-empty.svg" alt="" />
-              </div>
-              <div class="td month">March 2022</div>
-              <div class="td sites">Project Operating Cash flow</div>
-              <div class="td actual">$1,655,667</div>
-              <div class="td modeled">$1,655,667</div>
-              <div class="td delta">+ $8,892</div>
-              <div class="td graph">
-                <img src="./assets/divider.svg" alt="" />
-                <img src="./assets/graph-rectangle.svg" alt="" />
-              </div>
-              <div class="td expand">
-                <img src="./assets/arrow-up.svg" class="arrow-up" alt="" />
-              </div>
-            </div>
-
-            <div class="tr child">
-              <!-- Child 1 -->
-              <div class="tr">
-                <!-- Child 1 -->
-                <div class="td checkbox"></div>
-                <div class="td month"></div>
-                <div class="td sites">Total Energy Revenue</div>
-                <div class="td actual">$1,655,667</div>
-                <div class="td modeled">$1,655,667</div>
-                <div class="td delta">+ $8,892</div>
-                <div class="td graph">
-                  <!-- <img src="./assets/divider.svg" alt="" /> -->
-                  <img src="./assets/graph-rectangle.svg" alt="" />
-                </div>
-                <div class="td expand"></div>
-              </div>
-
-              <!-- Child 2 -->
-              <div class="tr">
-                <!-- Child 1 -->
-                <div class="td checkbox"></div>
-                <div class="td month"></div>
-                <div class="td sites">Total RECs / Incentives (Modeled)</div>
-                <div class="td actual">$1,655,667</div>
-                <div class="td modeled">$1,655,667</div>
-                <div class="td delta">+ $8,892</div>
-                <div class="td graph">
-                  <!-- <img src="./assets/divider.svg" alt="" /> -->
-                  <img src="./assets/graph-rectangle.svg" alt="" />
-                </div>
-                <div class="td expand"></div>
-              </div>
-
-              <!-- Child 3 -->
-              <!-- Child 1 -->
-              <div class="tr">
-                <!-- Child 1 -->
-                <div class="td checkbox"></div>
-                <div class="td month"></div>
-                <div class="td sites">
-                  Total RECs / Incentives (Not Modeled)
-                </div>
-                <div class="td actual">$1,655,667</div>
-                <div class="td modeled">$1,655,667</div>
-                <div class="td delta">+ $8,892</div>
-                <div class="td graph">
-                  <!-- <img src="./assets/divider.svg" alt="" /> -->
-                  <img src="./assets/graph-rectangle.svg" alt="" />
-                </div>
-                <div class="td expand"></div>
-              </div>
-
-              <!-- Child 4 -->
-              <!-- Child 1 -->
-              <div class="tr">
-                <!-- Child 1 -->
-                <div class="td checkbox"></div>
-                <div class="td month"></div>
-                <div class="td sites">Total A&M Costs</div>
-                <div class="td actual">$1,655,667</div>
-                <div class="td modeled">$1,655,667</div>
-                <div class="td delta">+ $8,892</div>
-                <div class="td graph">
-                  <!-- <img src="./assets/divider.svg" alt="" /> -->
-                  <img src="./assets/graph-rectangle.svg" alt="" />
-                </div>
-                <div class="td expand"></div>
-              </div>
-
-              <!-- Child 5 -->
-              <!-- Child 1 -->
-              <div class="tr">
-                <!-- Child 1 -->
-                <div class="td checkbox"></div>
-                <div class="td month"></div>
-                <div class="td sites">Total other costs (MSA)</div>
-                <div class="td actual">$1,655,667</div>
-                <div class="td modeled">$1,655</div>
-                <div class="td delta">+ $8,892</div>
-                <div class="td graph">
-                  <!-- <img src="./assets/divider.svg" alt="" /> -->
-                  <img src="./assets/graph-rectangle.svg" alt="" />
-                </div>
-                <div class="td expand"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            </th>
+            <th class="delta">Delta</th>
+            <th class="graph">Graph</th>
+            <th class="expand">Expand</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   </body>
   <script src="./script.js"></script>
