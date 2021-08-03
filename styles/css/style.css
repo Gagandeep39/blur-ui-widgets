@@ -3,31 +3,32 @@
   box-sizing: border-box;
   margin: 0; }
 
-html {
-  position: relative;
-  height: 3720px; }
-
 body {
   position: relative;
-  height: 3720px; }
-
-.background {
-  position: absolute;
-  background-image: url(../../assets/background5.svg);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0; }
-
-.blur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.04);
-  backdrop-filter: blur(250px);
-  height: 100%; }
+  height: 3720px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px; }
+  body::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(250px);
+    height: 100%;
+    content: '';
+    z-index: -100; }
+  body::before {
+    position: absolute;
+    background-image: url(../../assets/background5.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: -100; }
 
 .nav {
   display: flex;
@@ -276,7 +277,12 @@ body {
   .closed .td.expand {
     justify-content: center; }
   .closed .td.graph {
-    justify-content: center; }
+    justify-content: center;
+    height: 100%;
+    position: relative; }
+    .closed .td.graph canvas {
+      background-color: #fff;
+      height: 100%; }
   .closed .td.sites {
     justify-content: flex-start;
     padding-left: 36px; }
