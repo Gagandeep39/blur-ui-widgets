@@ -23,6 +23,12 @@
   }
   .td.graph {
     justify-content: center;
+    height: 100%;
+    position: relative;
+    canvas {
+      background-color: #fff;
+      height: 100%;
+    }
   }
   .td.sites {
     justify-content: flex-start;
