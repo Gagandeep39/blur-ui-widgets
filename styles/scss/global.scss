@@ -3,27 +3,14 @@
   box-sizing: border-box;
   margin: 0;
 }
-html {
-  position: relative;
-  height: 3720px;
-}
+
 body {
   position: relative;
   height: 3720px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-}
-.background {
-  position: absolute;
-  background-image: url(../../assets/background5.svg);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-
-  &::before {
+  &::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,5 +19,18 @@ body {
     backdrop-filter: blur(250px);
     height: 100%;
     content: '';
+    z-index: -100;
+  }
+
+  &::before {
+    position: absolute;
+    background-image: url(../../assets/background5.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: -100;
   }
 }
