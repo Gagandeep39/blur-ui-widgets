@@ -1,0 +1,48 @@
+.btn {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px 8px 16px;
+
+  // Font
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border: 1px solid #47d060;
+  margin-right: 12px;
+  text-align: left !important;
+  transition: transform 0.2s ease-in;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.primary-btn {
+  /* Primary/Green */
+
+  background: #47d060;
+
+  &:disabled {
+    background-color: rgba(71, 208, 96, 0.4);
+    border-color: transparent;
+    color: #212121;
+  }
+}
+
+.secondary-btn {
+  color: #47d060;
+  background-color: transparent;
+
+  &:disabled {
+    color: rgba(71, 208, 96, 0.4);
+    border-color: rgba(71, 208, 96, 0.4);
+  }
+}
