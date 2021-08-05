@@ -4,10 +4,9 @@
   background: url(../assets/sort.svg) no-repeat 95%;
 } */
 .container {
-  position: absolute;
-  left: 64px;
-  right: 64px;
-  top: 140px;
+  position: relative;
+  margin-left: 64px;
+  margin-right: 64px;
   height: 200px;
 }
 .table {
