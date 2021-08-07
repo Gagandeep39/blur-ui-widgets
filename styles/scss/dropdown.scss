@@ -74,8 +74,11 @@ $default-corner: 4px;
     }
 
     &:hover {
-      color: #121c1c;
       background-color: $base-color;
+
+      a {
+        color: #121c1c;
+      }
     }
 
     > a {
