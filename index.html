@@ -73,6 +73,40 @@
     </div>
 
     <div class="container">
+      <button id="show-hide">Show Dialogue</button>
+      <dialog id="navigation-expanded">
+        <div>
+          <div class="avatar"><img src="./assets/logo.svg" /></div>
+          <div class="sub-section">
+            <div class="page">
+              <h2>Page</h2>
+              <p>Select a page to be displayed</p>
+              <ul class="dropdown-items">
+                <li class="dropdown-item"><a href="#">Dashboard</a></li>
+                <li class="dropdown-item"><a href="#">Energy</a></li>
+                <li class="dropdown-item"><a href="#">Assets</a></li>
+                <li class="dropdown-item"><a href="#">Financials</a></li>
+                <li class="dropdown-item"><a href="#">Portfolio</a></li>
+                <li class="dropdown-item"><a href="#">Support</a></li>
+              </ul>
+            </div>
+            <div class="site">Site</div>
+            <div class="time">Time</div>
+          </div>
+          <!-- <button onclick="closeDialog()" class="btn primary-btn">Apply</button> -->
+        </div>
+      </dialog>
+      <script type="text/JavaScript">
+        const dialogBtn = document.getElementById('show-hide');
+        dialogBtn.addEventListener('click', () => {document.getElementById('navigation-expanded').showModal();})
+
+        function closeDialog() {
+          document.getElementById('navigation-expanded').close();
+        }
+      </script>
+    </div>
+
+    <div class="container">
       <ul class="tab">
         <li class="tab-item">Cash flow</li>
         <li class="tab-item">SPV Offtaker - Invoice</li>

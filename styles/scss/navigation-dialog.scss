@@ -1,0 +1,76 @@
+#navigation-expanded {
+  // Center the dialog
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.08);
+  /* Blur */
+
+  backdrop-filter: blur(250px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+
+  > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+
+  img {
+    margin-right: 24px;
+  }
+
+  .sub-section {
+    display: flex;
+
+    > div {
+      border-left: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 0 24px;
+
+      h2 {
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 122% */
+
+        /* Emphasis/High (100%) */
+
+        color: #ffffff;
+      }
+
+      p {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 13px;
+        /* identical to box height */
+
+        letter-spacing: 0.2px;
+
+        /* Emphasis/Medium (80%) */
+
+        color: rgba(255, 255, 255, 0.8);
+
+        margin-top: 2px;
+      }
+    }
+
+    .page {
+      .dropdown-items {
+        margin-top: 16px;
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+      }
+    }
+  }
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
