@@ -78,9 +78,9 @@
         <div>
           <div class="avatar"><img src="./assets/logo.svg" /></div>
           <div class="sub-section">
-            <div class="page">
+            <div class="section-page">
               <h2>Page</h2>
-              <p>Select a page to be displayed</p>
+              <p>Select a page to view.</p>
               <ul class="dropdown-items">
                 <li class="dropdown-item"><a href="#">Dashboard</a></li>
                 <li class="dropdown-item"><a href="#">Energy</a></li>
@@ -90,10 +90,32 @@
                 <li class="dropdown-item"><a href="#">Support</a></li>
               </ul>
             </div>
-            <div class="site">Site</div>
-            <div class="time">Time</div>
+            <div class="section-site">
+              <h2>Site</h2>
+              <p>Select the site to see site-specific information.</p>
+              <ul class="dropdown-items">
+                <li class="dropdown-item"><a href="#">WB Los Angeles</a></li>
+                <li class="dropdown-item"><a href="#">WB San Jose</a></li>
+                <li class="dropdown-item"><a href="#">WB Yosemite</a></li>
+              </ul>
+            </div>
+            <div class="section-time">
+              <h2>Time</h2>
+              <p>Select the timeframe for the site information</p>
+              <ul class="dropdown-items">
+                <li class="dropdown-item"><a href="#">Realtime</a></li>
+                <li class="dropdown-item"><a href="#">Day</a></li>
+                <li class="dropdown-item"><a href="#">Month</a></li>
+                <li class="dropdown-item"><a href="#">Year</a></li>
+              </ul>
+            </div>
           </div>
           <!-- <button onclick="closeDialog()" class="btn primary-btn">Apply</button> -->
+        </div>
+        <div>
+          <button class="btn primary-btn apply" onclick="closeDialog()">
+            Apply
+          </button>
         </div>
       </dialog>
       <script type="text/JavaScript">

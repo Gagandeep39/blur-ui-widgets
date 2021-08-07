@@ -27,7 +27,7 @@
     display: flex;
 
     > div {
-      border-left: 1px solid rgba(255, 255, 255, 0.4);
+      border-left: 0.5px solid rgba(255, 255, 255, 0.4);
       padding: 0 24px;
 
       h2 {
@@ -61,13 +61,24 @@
       }
     }
 
-    .page {
-      .dropdown-items {
-        margin-top: 16px;
-        background-color: transparent;
-        backdrop-filter: blur(0px);
-      }
+    div[class*='section-'] > .dropdown-items {
+      margin-top: 16px;
+      background-color: transparent;
+      backdrop-filter: blur(0px);
     }
+
+    .section-site > .dropdown-items {
+      width: 100%;
+      min-width: 364px;
+    }
+
+    .section-time > .dropdown-items {
+      min-width: 120px;
+    }
+  }
+
+  .apply {
+    margin: 24px auto;
   }
 
   &::backdrop {
